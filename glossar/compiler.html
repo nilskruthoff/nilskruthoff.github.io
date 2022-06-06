@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Compiler</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="begriff.css">
+        <link rel="stylesheet" type="text/css" href="topbutton.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="p-3 bg-dark text-white">
+            <nav class="container">
+                <div class="d-flex">
+
+                    <ul class="nav col-lg-auto">
+                        <li><a href="index.html" class="nav-link px-2 text-primary">Log7-Consulting</a></li>
+                        <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
+                        <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
+                        <li><a href="marketing.html" class="nav-link px-2 text-white">Marketing</a></li>
+                        <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
+                        <li><a href="../index.html" class="nav-link px-2 text-primary">Zurück zum Lebenslauf</a></li>
+                    </ul>
+
+                    <form class="form-inline">
+                        <input list="keywords" id="searchText" class="form-control mr-sm-2" type="text" placeholder="Stichwortsuche...">
+                        <input class="btn btn-primary" type="button" id="SearchBtn" value="Suchen"
+                               onclick="keySearch(document.getElementById('searchText').value, 1)" />
+                        <datalist id="keywords">
+                            <option value="Aufgaben">
+                            <option value="Interpreter">
+                            <option value="Funktionsweise">
+                            <option value="Just-in-time">
+                            <option value="Programmiersprache">
+                            <option value="Maschinencode">
+                            <option value="Assembler">
+                        </datalist>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron">
+            <section class="container">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
+                        <li class="breadcrumb-item"><a href="glossar.html">Glossar</a></li>
+                        <li class="breadcrumb-item active text" aria-current="page">Compiler</li>
+                    </ol>
+                </nav>
+                <h1 class="display-1 text-nowrap" id="title">Compiler</h1>
+                <p class="lead mt-4">Ein Zielprogramm eines Computers besteht nur aus zwei unterschiedlichen Zeichen – der 0 und der 1 – deshalb nennt
+                    man es auch Binärprogramm. Ein Compiler ist ein Programm, das den in einer höheren <a href="programmiersprachen.html">Programmiersprache</a> geschriebenen Quellcode in
+                    die maschinenlesbare, binäre Sprache übersetzt. Das Ergebnis ist „ausführbarer Code“, der auch als
+                    <a href="https://whatis.techtarget.com/de/definition/Objekt-Code">Objektcode</a> oder Zielsprache bezeichnet wird. In manchen
+                    Fällen erfolgt die Übersetzung auch per Zwischenschritt mit einer <a id="assembler" href="http://assembler.hpfsc.de/">Assemblersprache</a>, so dass
+                    anschließend ein Assembler zur Erzeugung des Maschinencodes benötigt wird.</p>
+            </section>
+        </div>
+
+        <button onclick="toTop()" id="topButton" title="Zum Seitenanfang">^</button>
+
+        <main class="container">
+            <section class="section-seperator">
+                <img class="img-fluid img-thumbnail" src="img/compiler.png" alt="Compiler Prinzip">
+                <small>Bildquelle: https://www.codecademy.com/articles/cpp-compile-execute-locally</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4" id="aufgaben">Aufgaben des Compilers</h4>
+                <p class="text">Ein Compiler ist aber mehr als nur ein „Übersetzer“, denn im Zuge des Kompilierens fallen weitere Aufgaben an:</p>
+                <ul class="text">
+                    <li>Bei der lexikalischen Analyse wird der Quellcode gescannt und Programmsymbole extrahiert. Überflüssige und fehlende Zeichen
+                        werden als Fehler erkannt.</li>
+                    <li>Es folgt das Parsing mit einer syntaktischen Analyse, bei der die Grammatik des Quellcodes überprüft wird.</li>
+                    <li>Bei der anschließenden semantischen Analyse wird überprüft, ob der Quellcode Sinn ergibt.</li>
+                </ul>
+                <p class="text">Das Finden von Programmfehlern ist also eine wesentliche Aufgabe des Compilers. Findet ein Compiler einen Fehler, wird eine Fehlermeldung
+                    mit Zeilennummer ausgegeben, so dass die Navigation des Entwicklers zum Fehler sehr leicht fällt.</p>
+                <p class="text">Nicht bei allen Programmiersprachen ist ein Compiler notwendig. Java bspw. als
+                    <a href="programmiersprachen.html">objektorientierte Programmiersprache</a> wird durch den
+                    Java-Just-in-Time-Compiler, einem Bestandteil der Java-Entwicklungsumgebung, in Java-Bytecode kompiliert.
+                    Java-Bytecode ist eine sogenannte Hybridsprache, also ein Kompromiss zwischen vollständig kompiliertem Binärcode und interpretierbaren Quellcode.
+                    Auch C#, VB.NET und Python sind Hybridsprachen. Typische Programmiersprachen mit Compiler sind C, C++. Pascal, Modula, COBOL und Fortran.
+                    Viele <a href="ide.html">integrierten Entwicklungsumgebungen</a> haben einen Compiler im Programm integriert und erleichtern und beschleunigen so die Entwicklung.</p>
+                <small>https://t2informatik.de/wissen-kompakt/compiler/</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Wie funktioniert ein Compiler?</h4>
+                <video controls width="1080px">
+                    <source src="img/compiler.mp4" type="video/mp4">
+                </video>
+                <small>https://www.youtube.com/watch?v=Uuyf3wrGOYM&ab_channel=CodeConstruct</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <div id="interpreter"></div>
+                <h4 class="h4">Der Unterschied von Compiler und Interpreter</h4>
+                <p class="text">Programmiersprachen sind so aufgebaut, dass Menschen sie relativ mühelos lesen und anwenden können. Damit ein Prozessor
+                    die einzelnen Anweisungen eines Programms verstehen kann, muss der Quellcode jedoch erst in eine für die Maschine verständliche
+                    Form gebracht werden. Je nach Programmiersprache passiert das zum Beispiel mittels Compiler oder Interpreter.</p>
+                <h5 class="h5">Interpreter</h5>
+                <p class="text">Ein Interpreter verarbeitet den Quellcode eines Projekts zur Laufzeit. Dazu geht der Interpreter Zeile für Zeile vor: Eine Anweisung
+                    wird eingelesen, analysiert und sofort ausgeführt. Dann geht es mit der nächsten Anweisung weiter, bis schließlich das Ende des
+                    Programms erreicht ist; oder bis ein Fehler auftritt – der Interpreter stoppt seine Arbeit, sobald etwas nicht stimmt. Dadurch weiß
+                    man als Entwickler normalerweise sofort, an welcher Stelle sich der Fehler befindet, und kann das Problem so schneller beheben.</p>
+                <p class="text">Ein Interpreter erzeugt keine Datei, die man mehrmals ausführen könnte. Er fertigt auch keine Übersetzung des Quellcodes in
+                    Maschinensprache um, sondern fungiert als eine Zwischenschicht zwischen Programmiersprache und Maschine. Der Interpreter analysiert
+                    zur Laufzeit jede einzelne Anweisung eines Programms und ruft die entsprechende Routine aus seinen internen Bibliotheken auf, die
+                    wiederum die gewünschte Aktion auf dem Prozessor des Zielsystems ausführt.</p>
+                <p class="text">Weil also quasi live gearbeitet wird und jedes Statement einzeln verarbeitet werden muss, sind interpretierte Programme in der Regel
+                    langsamer als Kompilate. Sie führen beispielsweise auch wiederkehrende Anweisungen jeweils neu aus, wenn sie an der Reihe sind.</p>
+                <p class="text">Python, <a href="php.html">PHP</a> Perl oder BASIC sind Beispiele für Sprachen, die einen Interpreter verwenden.</p>
+                <hr>
+                <h5 class="h5">Compiler</h5>
+                <p class="text">Ein Compiler wandelt Quellcode in Maschinensprache um, übersetzt also das gesamte Programm von einer Programmiersprache in Maschinencode.
+                    Der Code wird vollständig übersetzt, bevor das Programm ausgeführt wird. Häufig passiert noch ein Zwischenschritt, bevor das Programm
+                    in Maschinensprache übersetzt wird: Der Quellcode wird zunächst in einen Zwischencode umgewandelt, zum Beispiel Objektcode.</p>
+                <p class="text">Der Compiler stößt also mehrere Schritte an, um aus dem vorliegenden Quellcode ein lauffähiges Programm zu erstellen. Dafür benötigt
+                    er vergleichsweise mehr Zeit und Ressourcen. Sobald das fertige Programm läuft, ist es jedoch effizienter als interpretierte Software,
+                    da alle Anweisungen bereits vollständig in Maschinencode übersetzt wurden.</p>
+                <p class="text">Reine Compiler-Sprachen sind zum Beispiel C / C++ und Pascal.</p>
+                <hr>
+                <h5 class="h5">Just-in-time-Compiler: die Hybridlösung</h5>
+                <p class="text">Es gibt auch Ansätze, die Compiler und Interpreter vereinen und so die Schwächen der jeweiligen Systeme ausgleichen.
+                    Der Compreter oder Just-in-time-Compiler übersetzt das Programm erst zur Laufzeit in Maschinencode. Einerseits bietet die Hybridlösung
+                    gute Performance kompilierter Programme, andererseits ermöglicht sie die komfortable Fehlersuche interpretierter Programme.
+                    JIT-Compiler kommen vor allem beim Erstellen plattformunabhängiger und portabler Software zum Einsatz.</p>
+                <p class="text">Beispiele für Programmiersprachen mit JIT-Compiler sind Java, Visual Basic, C# und auch C++.NET.</p>
+                <small>https://www.dev-insider.de/der-unterschied-von-compiler-und-interpreter-a-742282/</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4"><img src="icons/blockquote-left.svg" alt="" width="30px">   Quellen</h4>
+                <ul class="list-group text">
+                    <li class="list-group-item">
+                        <strong>Augusten, S. (2018). </strong><i>Der Unterschied von Compiler und Interpreter</i>, (URL:
+                        <a class="link-primary" href="https://www.dev-insider.de/der-unterschied-von-compiler-und-interpreter-a-742282/">
+                            https://www.dev-insider.de/der-unterschied-von-compiler-und-interpreter-a-742282/</a>
+                        [letzter Zugriff: 24.08.2021]).
+                    </li>
+                    <li class="list-group-item">
+                        <strong>o. A. (o. J). </strong>
+                        <i>Programming/development tools used by software developers worldwide from 2018 to 2021</i>,
+                        (URL:
+                        <a class="link-primary" href="https://t2informatik.de/wissen-kompakt/compiler/">
+                            https://t2informatik.de/wissen-kompakt/compiler/</a>
+                        [letzter Zugriff: 20.08.2021]).
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4"><img src="icons/info-square.svg" alt="" width="25px">   Informationen</h4>
+                <table class="table table-borderless table-30">
+                    <tbody>
+                    <tr>
+                        <td><img src="icons/person-circle.svg" alt="">  Autor</td>
+                        <td>Nils Kruthoff</td>
+                    </tr>
+                    <tr>
+                        <td><img src="icons/calendar-plus.svg" alt="">  Erstellt</td>
+                        <td>02.05.2021</td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap"><img src="icons/pencil-square.svg" alt=""> Zuletzt Beabeitet</td>
+                        <td class="text-nowrap"><strong id="datetime">14.08.2021 18:00</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="icons/tag.svg" alt="">  Tags</td>
+                        <td><a href="it.html">IT</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button onclick="saveDateTime()" class="btn btn-primary">Speichern</button>
+            </section>
+
+            </main>
+            <footer class="p-3 bg-dark text-white">
+                <div class="container">
+                    <div class="d-flex">
+                        <p class="col-sm-4">Grundlagen der Web-Programmierung</p>
+                        <p class="col-sm-4">Glossar für die Log7-Consult GmbH</p>
+                        <p class="col-sm-4">©Nils Kruthoff</p>
+                    </div>
+                </div>
+            </footer>
+
+        <script src="keysearch.js" type="text/javascript"></script>
+        <script src="savedate.js" type="text/javascript"></script>
+        <script src="mark.js" type="text/javascript"></script>
+        <script src="top.js" type="text/javascript"></script>
+    </body>
+</html>

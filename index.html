@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <!--===== STYLESHEETS ===== -->
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!--=====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--===== FONTS ===== -->
+        <link href="https://api.fontshare.com/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+
+        <!--===== FAVICON =====-->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/python.ico">
+
+        <title>Nils Kruthoff</title>
+    </head>
+
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a class="nav__logo" href="#">Nils</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link active" href="#home">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#lebenslauf">Resume</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#certificates">Certifications</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#kontakt">Contact</a></li>
+                        <li class="nav__item"><a class="nav__link" href="glossar/index.html">Glossary</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--==================== HOME ====================-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data" id="home_text">
+                    <h1 class="home__title">
+                        I am <span class="home__title-color">Nils</span>,<br> Computer Science Student
+                        <span class="h2 text-muted"><br>and working student at German Aerospace Center</span>
+                    </h1>
+
+                    <a class="button" href="#lebenslauf">Directly to Resume</a>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+                <div class="about__container bd-grid">
+                    <div class="about__img media_about__img media_hidden">
+                        <img alt="" src="assets/img/about_me_bw.png">
+                        <small>Picture in ASCII-Art</small>
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">This is me</h2>
+                        <p class="about__text media_about__text">
+                            Presently I am studying computer science at <a class="link-black" href="https://www.iu.de/bachelor/informatik/" target="_blank">IU
+                            International University</a> in the fourth semester.
+                            My computer science major has a focus on software engineering and my additional specializations are
+                            Web Development and Data Science. <br> Currently I am a working student for software engineering in the
+                            <a class="link-black" href="https://www.dlr.de/sc" target="_blank">Institute for Software Technology</a> in the
+                            German Aerospace Center (DLR) and support the development of Decision Supports Systems to early detect trends in science.
+                            In addition to my studies I am learning a lot about data science on
+                            the platform <a class="link-black" href="https://www.datacamp.com/courses" target="_blank">DataCamp</a>. My favorite programming language is Python,
+                            in which I've also been certified as an python certified entry-level programmer (PCEP).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== LEBENSLAUF ====================-->
+            <section class="skills section" id="lebenslauf">
+                <h2 class="section-title">Resume</h2>
+                <div class="skills__container bd-grid">
+                    <div>
+                        <!--========== BERUFLICH ==========-->
+                        <div class="subtitle">
+                            <i class='bx bxs-briefcase skills__icon'></i>
+                            <h2 class="skills__subtitle">Work experience</h2>
+                        </div>
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td class="text-nowrap media_table_column">since march 2021</td>
+                                <td>
+                                    <p><span class="strong">Deutsches Zentrum für Luft- und Raumfahrt</span><br>
+                                        <small>Institute for Software Technologie</small><br><br>
+                                        Working student for web development and testing</p>
+                                    <ul>
+                                        <li class="media_since"><small>since december 2020</small></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td class="text-nowrap media_table_column">december 2020 - <br> march 2021</td>
+                                <td>
+                                    <p><span class="strong">Deutsches Zentrum für Luft- und Raumfahrt Projektträger</span><br>
+                                        <small>Institute for Information- and Communication Technologie</small><br><br>
+                                        Working student for web development and testing</p>
+                                    <ul>
+                                        <li class="media_since"><small>since december 2020</small></li>
+                                        <li class="lebenslauf-item">Web application development with PHP and Symfony</li>
+                                        <li class="lebenslauf-item">Agile way of working with Jira</li>
+                                        <li class="lebenslauf-item">Unittests</li>
+                                        <li class="lebenslauf-item">Systemtests</li>
+                                        <li class="lebenslauf-item">Integrationstests</li>
+                                        <li class="lebenslauf-item">Database export</li>
+                                        <li class="lebenslauf-item">PHPStorm</li>
+                                        <li class="lebenslauf-item">Git with GitLab</li>
+                                        <li class="lebenslauf-item">First-Level support</li>
+                                        <li class="lebenslauf-item">Linux Ubuntu</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <!--========== AKADEMISCH ==========-->
+                        <div class="subtitle">
+                            <i class='bx bxs-graduation skills__icon'></i>
+                            <h2 class="skills__subtitle">Education</h2>
+                        </div>
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td class="text-nowrap media_table_column">since june 2020</td>
+                                <td>
+                                    <p><strong>IU International University</strong></p>
+                                    <ul>
+                                        <li class="media_since"><small>since june 2020</small></li>
+                                        <li class="lebenslauf-item">Computer Science, B.Sc.</li>
+                                        <li class="lebenslauf-item">Focus: Software Engineering</li>
+                                        <li class="lebenslauf-item">Specializations: Data Science and Web Development</li>
+                                        <li class="lebenslauf-item">Grade: 1.71 <small>(state: 17.03.2022)</small></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="media_table_column">2010 - 2018</td>
+                                <td>
+                                    <p><strong>Albert-Einstein-Gymnasium</strong></p>
+                                    <ul class="skills__box">
+                                        <li class="media_since"><small>2010 - 2018</small></li>
+                                        <li class="lebenslauf-item">Mathematics and Chemistry Advanced Course</li>
+                                        <li class="lebenslauf-item">GDCh Award 2018</li>
+                                        <li class="lebenslauf-item">Student Representative</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2">
+                                        <a href="assets/pdf/lebenslauf.pdf" download="lebenslauf.pdf"
+                                           class="button">Download resume</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!--==================== PROJEKTE ====================-->
+                        <div class="subtitle">
+                            <i class='bx bx-code-block skills__icon'></i>
+                            <h2 class="skills__subtitle" id="projects">Projects</h2>
+                        </div>
+                        <table class="table">
+                            <tbody>
+                            <!--===== PYGETTER =====-->
+                            <tr>
+                                <td class="text-nowrap media_table_column"><b>Pygetter</b></td>
+                                <td>
+                                    <p class="media_project"><b>Pygetter</b></p>
+                                    <p><b>Development of a Python module for annotation-based, automatic
+                                        generation of getter, setter and deleter methods</b></p>
+                                    <ul>
+                                        <li class="lebenslauf-item"><b>Technologies: </b>Python</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <!--===== CHECKSUMMEN-CHECKER =====-->
+                            <tr>
+                                <td class="text-nowrap media_table_column"><b>Checksum Checker</b></td>
+                                <td>
+                                    <p class="media_project"><b>Checksum Checker</b></p>
+                                    <p><b>Development of a tool for checking the integrity of files after download</b></p>
+                                    <ul>
+                                        <li class="lebenslauf-item"><b>Functions: </b>Calculate the checksum of a downloaded file
+                                            and comparing it with its intended checksum, TKinter GUI based</li><br>
+                                        <li class="lebenslauf-item"><b>Technologies: </b>Python with TKinter, SHA265, MD5</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <!--===== GLOSSAR =====-->
+                            <tr>
+                                <td class="text-nowrap media_table_column"><b>Online Glossary</b></td>
+                                <td>
+                                    <p class="media_project"><b>Online Glossary</b></p>
+                                    <p><b>Development of a glossary as part of a seminar work</b></p>
+                                    <ul>
+                                        <li class="lebenslauf-item"><b>Tasks: </b>Glossary of technical terms with various
+                                            navigation elements, keyword search function and permanent
+                                            storage of change dates with JavaScript LocalStorage</li><br>
+                                        <li class="lebenslauf-item"><b>Technologies: </b>HTML, CSS with Bootstrap, JavaScript</li><br>
+                                        <a href="glossar/index.html" target="_blank">
+                                            <li class="lebenslauf-item">Preview</li>
+                                        </a>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <!--===== FÖRDERMITTELSYSTEM =====-->
+                            <tr>
+                                <td class="text-nowrap media_table_column"><b>Web application for <br> funding proposal</b></td>
+                                <td>
+                                    <p class="media_project"><b>Web application for funding proposal</b></p>
+                                    <p><b>Web application for companies to propose for funding to enable trainees to spend an educational period abroad.</b></p>
+                                    <ul>
+                                        <li class="lebenslauf-item"><b>Tasks: </b> Creating database models, various document exports (PDF, XLS), Frontend templates and much more backend logic.
+                                        </li><br>
+                                        <li class="lebenslauf-item"><b>Technologies: </b>PHP, Symfony, JavaScript, Doctrine (ORM), React</li><br>
+                                        <a href="https://www.foerderportal-ausbildungweltweit.de/" target="_blank">
+                                            <li class="lebenslauf-item">Preview</li><br>
+                                        </a>
+                                    </ul>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <!--==================== FÄHIGKEITEN ====================-->
+                        <div class="subtitle">
+                            <i class='bx bxs-brain skills__icon'></i>
+                            <h2 class="skills__subtitle" id="skills">Skills and Knowledge</h2>
+                        </div>
+
+                        <!--===== PYTHON =====-->
+                        <div class="skills__data">
+                            <div class="skills__names2">
+                                <i class='bx bx-code skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__html"></div>
+                        </div>
+
+                        <!--===== SQL =====-->
+                        <div class="skills__data">
+                            <div class="skills__names2">
+                                <i class='bx bxs-data skills__icon'></i>
+                                <span class="skills__name">SQL</span>
+                            </div>
+                            <div class="skills__bar skills__html"></div>
+                        </div>
+
+                        <!--===== OOP =====-->
+                        <div class="skills__data">
+                            <div class="skills__names2">
+                                <i class='bx bx-code-curly skills__icon'></i>
+                                <span class="skills__name">Object oriented programming</span>
+                            </div>
+                            <div class="skills__bar skills__html"></div>
+                        </div>
+
+                        <!--===== GIT =====-->
+                        <div class="skills__data">
+                            <div class="skills__names2">
+                                <i class='bx bxl-git skills__icon'></i>
+                                <span class="skills__name">Git</span>
+                            </div>
+                            <div class="skills__bar skills__html"></div>
+                        </div>
+
+                        <!--===== UNITY =====-->
+                        <div class="skills__data">
+                            <div class="skills__names2">
+                                <i class='bx bxl-codepen skills__icon'></i>
+                                <span class="skills__name">Unity3D with C#</span>
+                            </div>
+                            <div class="skills__bar skills__html"></div>
+                        </div>
+
+                        <!--===== ANALYTISCHE DENKWEISE =====-->
+                        <div class="skills__data">
+                            <div class="skills__names2">
+                                <i class='bx bx-analyse skills__icon'></i>
+                                <span class="skills__name">Adaptability</span>
+                            </div>
+                            <div class="skills__bar skills__html"></div>
+                        </div>
+
+                        <!--===== ANPASSUNGSFÄHIGKEIT =====-->
+                        <div class="skills__data">
+                            <div class="skills__names2">
+                                <i class='bx bx-brain skills__icon'></i>
+                                <span class="skills__name">Analytical mindset</span>
+                            </div>
+                            <div class="skills__bar skills__html"></div>
+                        </div>
+
+                        <!--===== EIGENMOTIVATION =====-->
+                        <div class="skills__data">
+                            <div class="skills__names2">
+                                <i class='bx bx-task skills__icon'></i>
+                                <span class="skills__name">Self motivated and structured work</span>
+                            </div>
+                            <div class="skills__bar skills__html"></div>
+                        </div>
+
+                        <!--==================== WEITERE FÄHIGKEITEN ====================-->
+                        <div class="subtitle">
+                            <i class='bx bxs-book-reader skills__icon'></i>
+                            <h4 class="skills__subtitle">Other Skills and Hobbies</h4>
+                        </div>
+                        <span class="skills__name_weitere">Django</span>
+                        <span class="skills__name_weitere">HTML</span>
+                        <span class="skills__name_weitere">CSS with Bootstrap</span>
+                        <span class="skills__name_weitere">3D-Druck</span>
+                        <span class="skills__name_weitere">Illustrator CAD</span>
+                        <span class="skills__name_weitere">Linux</span>
+                        <span class="skills__name_weitere">Raspberry Pi</span>
+                        <span class="skills__name_weitere">Blockchain</span>
+                        <span class="skills__name_weitere">Arduino</span>
+                        <span class="skills__name_weitere">Spreadsheets</span>
+                        <span class="skills__name_weitere">Object Orientation</span>
+                        <span class="skills__name_weitere">JavaScript</span>
+                        <span class="skills__name_weitere">PHP</span>
+                        <span class="skills__name_weitere">Symfony</span>
+                    </div>
+                    <div>
+                        <img alt="Visualization of work" class="skills__img media_image" src="assets/img/work3.jpg">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ZERTIFIKATE ====================-->
+            <section class="work section" id="certificates">
+                <h2 class="section-title">Certifications and Courses</h2>
+
+                <div class="work__container bd-grid">
+                    <!--===== CERTIFIED ENTRY-LEVEL PYTHON PROGRAMMER=====-->
+                    <div class="work__img gold-border">
+                        <a href="assets/img/pcep_certificate.png" target="_blank">
+                            <img alt="" src="assets/img/pcep_certificate.png">
+                        </a>
+                        <small>
+                            <strong class="certification-description">Certified Entry-Level Python Programmer</strong><br>
+                            <a class="certification-description" href="https://verify.openedg.org/?id=FG5R.sP8z.tux4"
+                               target="_blank">
+                                <i class='bx bxs-check-shield' style='color:#4070f4'></i>verify
+                            </a>
+                        </small>
+                    </div>
+
+                    <!--===== PYTHON PROGRAMMER TRACK =====-->
+                    <div class="work__img">
+                        <a href="assets/img/datacamp_certificate.png" target="_blank">
+                            <img alt="" src="assets/img/datacamp_certificate.png">
+                        </a>
+                        <small>
+                            <strong class="certification-description">Python Programmer Track</strong><br>
+                            <a class="certification-description"
+                               href="https://www.datacamp.com/statement-of-accomplishment/track/1f4e9f52585763a49e42ec16305b329a74a88d4f"
+                               target="_blank">
+                                <i class='bx bxs-check-shield' style='color:#4070f4'></i>verify
+                            </a>
+                        </small>
+                    </div>
+
+                    <!--===== BLOCKCHAIN =====-->
+                    <div class="work__img">
+                        <a href="assets/img/blockchain_certificate.png" target="_blank">
+                            <img alt="" src="assets/img/blockchain_certificate.png">
+                        </a>
+                        <small>
+                            <strong class="certification-description">Introduction to Blockchains</strong><br>
+                            <a class="certification-description"
+                               href="https://www.codecademy.com/profiles/nilskruthoff/certificates/f21a464d190cb43e78b83ca8d1f0c6b0"
+                               target="_blank">
+                                <i class='bx bxs-check-shield' style='color:#4070f4'></i>verify
+                            </a>
+                        </small>
+                    </div>
+
+                    <!--===== JAVASCRIPT EINFÜHRUNG =====-->
+                    <div class="work__img">
+                        <a href="assets/img/javascript_certificate.png" target="_blank">
+                            <img alt="" src="assets/img/javascript_certificate.png">
+                        </a>
+                        <small>
+                            <strong class="certification-description">Introduction to JavaScript</strong><br>
+                            <a class="certification-description"
+                               href="https://www.codecademy.com/profiles/nilskruthoff/certificates/705dcb15de0da4dd9d9fc4f3274b430e"
+                               target="_blank">
+                                <i class='bx bxs-check-shield' style='color:#4070f4'></i>verify
+                            </a>
+                        </small>
+                    </div>
+
+                    <!--===== PHP LEVEL 2 =====-->
+                    <div class="work__img">
+                        <a href="assets/img/php_certificate.png" target="_blank">
+                            <img alt="" src="assets/img/php_certificate.png">
+                        </a>
+                        <small>
+                            <strong class="certification-description">Intermediate PHP</strong><br>
+                            <a class="certification-description" href="https://symfonycasts.com/certificates/15572823CC47"
+                               target="_blank">
+                                <i class='bx bxs-check-shield' style='color:#4070f4'></i>verify
+                            </a>
+                        </small>
+                    </div>
+
+                    <!--===== HTML =====-->
+                    <div class="work__img">
+                        <a href="assets/img/html_certificate.png" target="_blank">
+                            <img alt="" src="assets/img/html_certificate.png">
+                        </a>
+                        <small>
+                            <strong class="certification-description">HTML</strong><br>
+                            <a class="certification-description"
+                               href="https://www.codecademy.com/profiles/nilskruthoff/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7"
+                               target="_blank">
+                                <i class='bx bxs-check-shield' style='color:#4070f4'></i>verify
+                            </a>
+                        </small>
+                    </div>
+
+                    <!--===== CSS =====-->
+                    <div class="work__img">
+                        <a href="assets/img/css_certificate.png" target="_blank">
+                            <img alt="" src="assets/img/css_certificate.png">
+                        </a>
+                        <small>
+                            <strong class="certification-description">CSS</strong><br>
+                            <a class="certification-description"
+                               href="https://www.codecademy.com/profiles/nilskruthoff/certificates/9a5bb1fc45b4281af1fffec93b0aaf05"
+                               target="_blank">
+                                <i class='bx bxs-check-shield' style='color:#4070f4'></i>verify
+                            </a>
+                        </small>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== KONTAKT ====================-->
+            <section class="skills section" id="kontakt">
+                <h2 class="section-title">Contact</h2>
+                <div class="skills__container bd-grid">
+                    <table class="table">
+                        <tbody>
+
+                            <!--===== E-MAIL =====-->
+                            <tr>
+                                <td><br>
+                                    <strong>E-Mail</strong>
+                                </td>
+                                <td>
+                                    <span class="lebenslauf-item">nils.kruthoff@outlook.de</span>
+                                </td>
+                            </tr>
+
+                            <!--===== LINKEDIN =====-->
+                            <tr>
+                                <td><br>
+                                    <strong>Social</strong>
+                                </td>
+                                <td>
+                                    <span class="lebenslauf-item"><a href="https://www.linkedin.com/in/nils-kruthoff-a3b907212/">LinkedIn</a></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <img alt="" class="skills__img media_image" src="assets/img/contact.png">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER =========================-->
+        <footer class="footer">
+            <p class="footer__title">Nils</p>
+            <div class="footer__social">
+                <a class="footer__icon"
+                   href="https://www.linkedin.com/in/nils-kruthoff-a3b907212/"
+                   target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <p>&#169; 2021 </p>
+        </footer>
+
+        <!--==================== SCROLL REVEAL ====================-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

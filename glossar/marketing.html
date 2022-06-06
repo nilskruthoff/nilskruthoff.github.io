@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Glossar</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="topbutton.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="p-3 bg-dark text-white">
+            <nav class="container">
+                <div class="d-flex">
+
+                    <ul class="nav col-lg-auto">
+                        <li><a href="index.html" class="nav-link px-2 text-primary">Log7-Consulting</a></li>
+                        <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
+                        <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
+                        <li><a href="marketing.html" class="nav-link px-2 text-white">Marketing</a></li>
+                        <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
+                        <li><a href="../index.html" class="nav-link px-2 text-primary">Zurück zum Lebenslauf</a></li>
+                    </ul>
+
+                    <form class="form-inline">
+                        <input list="keywords" id="searchText" class="form-control mr-sm-2" type="text" placeholder="Stichwortsuche...">
+                        <input class="btn btn-primary" type="button" id="SearchBtn" value="Suchen"
+                               onclick="keySearch(document.getElementById('searchText').value, 7)" />
+                        <datalist id="keywords">
+                            <option value="Content Management System">
+                        </datalist>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron">
+            <section class="container">
+                <h1 class="display-1">Marketing</h1>
+            </section>
+        </div>
+
+        <button onclick="toTop()" id="topButton" title="Zum Seitenanfang">^</button>
+
+        <main class="container">
+            <section class="list-group">
+                <a href="cms.html" class="list-group-item list-group-item-action borderless">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1 font-smaller">CMS - Content Management System</h5>
+                        <small class="text-muted text-nowrap">Nils Kruthoff</small>
+                    </div>
+
+                    <p class="mb-1 font-small">Ein Content Management System (kurz CMS) ist eine Software, die zur Erstellung und Verwaltung von
+                        Inhalten – in Text-, Bild-, Video- oder sonstiger Form – verwendet wird. CMS werden vor allem zum Betreiben von Websites, aber auch
+                        für „Offline-Plattformen“ (in Intranetzwerken) eingesetzt. Weit verbreitet sind vor allem Open-Source-Systeme, die sowohl
+                        professionelle als auch private Anwender nutzen.</p>
+                </a>
+            </section>
+
+            </main>
+            <footer class="p-3 bg-dark text-white">
+                <div class="container">
+                    <div class="d-flex">
+                        <p class="col-sm-4">Grundlagen der Web-Programmierung</p>
+                        <p class="col-sm-4">Glossar für die Log7-Consult GmbH</p>
+                        <p class="col-sm-4">©Nils Kruthoff</p>
+                    </div>
+                </div>
+            </footer>
+
+        <script src="keysearch.js" type="text/javascript"></script>
+        <script src="mark.js" type="text/javascript"></script>
+        <script src="top.js" type="text/javascript"></script><script src="top.js"></script>
+    </body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Programmiersprachen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="begriff.css">
+        <link rel="stylesheet" type="text/css" href="topbutton.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="p-3 bg-dark text-white">
+            <nav class="container">
+                <div class="d-flex">
+
+                    <ul class="nav col-lg-auto">
+                        <li><a href="index.html" class="nav-link px-2 text-primary">Log7-Consulting</a></li>
+                        <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
+                        <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
+                        <li><a href="marketing.html" class="nav-link px-2 text-white">Marketing</a></li>
+                        <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
+                        <li><a href="../index.html" class="nav-link px-2 text-primary">Zurück zum Lebenslauf</a></li>
+                    </ul>
+
+                    <form class="form-inline">
+                        <input list="keywords" id="searchText" class="form-control mr-sm-2" type="text" placeholder="Stichwortsuche...">
+                        <input class="btn btn-primary" type="button" id="SearchBtn" value="Suchen"
+                               onclick="keySearch(document.getElementById('searchText').value, 9)"/>
+                        <datalist id="keywords">
+                            <option value="Funktionsweise">
+                            <option value="Binärcode">
+                            <option value="Trends">
+                            <option value="Klassen">
+                            <option value="funktional">
+                            <option value="imperativ">
+                            <option value="objektorientiert">
+                        </datalist>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron">
+            <section class="container">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
+                        <li class="breadcrumb-item"><a href="glossar.html">Glossar</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Programmiersprachen</li>
+                    </ol>
+                </nav>
+                <h1 class="display-1 text-nowrap" id="title">Programmiersprachen</h1>
+                <p class="lead mt-4">Programmiersprachen sind formale Sprachen, mit denen sich Rechenvorschriften formulieren lassen.
+                    Diese Vorschriften können dann von einem Computer ausgeführt werden.</p>
+            </section>
+        </div>
+
+        <button onclick="toTop()" id="topButton" title="Zum Seitenanfang">^</button>
+
+                <main class="container">
+            <section class="section-seperator">
+                <h4 class="h4">Die Funktionsweise von formalen Sprachen</h4>
+                <p class="text">Die Gesamtheit aller Anweisungen, die in einer bestimmten Programmiersprache geschrieben sind, bezeichnet man als
+                    <a href="https://de.wikipedia.org/wiki/Quelltext#:~:text=Quelltext%2C%20auch%20Quellcode%20(englisch%20source,Programmiersprache%20geschriebene%20Text%20eines%20Computerprogrammes.">Quellcode</a>.
+                    Ein Quellcode lässt sich mit Hilfe eines einfachen Texteditors erstellen.
+                    Bei größeren Projekten setzt man jedoch in der Regel eine <a href="#">Entwicklungsumgebung (IDE)</a> ein,
+                    die den Programmierer bei seiner Entwicklungsarbeit unterstützt.</p>
+                <p class="text">Damit ein Computer die im Quelltext enthaltenen Anweisungen ausführen kann, muss der Code in die Maschinensprache des jeweiligen
+                    Computertyps übersetzt werden. Bei der <a href="https://bmu-verlag.de/maschinensprache/">Maschinensprache</a> handelt es sich um einen
+                    <a href="https://www.timetac.com/de/zeiterfassungslexikon/binaercode/">Binärcode</a>, der folglich für Menschen nur schwer lesbar ist.
+                    Der Quelltext kann zu verschiedenen Zeitpunkten in die Maschinensprache übersetzt werden.</p>
+                <p class="text">Zum einen kann die Übersetzung vor der Ausführung des im Quellcode beschriebenen Programms erfolgen. Hierzu wird ein sogenannter
+                    <a href="compiler.html">Compiler</a> verwendet. Wird der Quelltext erst während der Laufzeit des Programms übersetzt, setzt man einen Just-in-Time- bzw. JIT-Compiler oder
+                    einen <a href="compiler.html#interpreter">Interpreter</a> ein.</p>
+                <p class="text">Bei einigen Sprachen – beispielsweise bei <a href="https://www.java.com/de/">Java</a> – wird auch eine Kombination dieser beiden Verfahren genutzt: Vor der
+                    Programmausführung wird der Code in einen Zwischencode übersetzt, der dann während der Laufzeit des Programms in
+                    Maschinencode überführt wird.</p>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Die Bestandteile von Programmiersprachen</h4>
+                <p class="text">Jede formale Sprache lässt sich anhand verschiedener Informationen genau definieren. Zu diesen Informationen zählen die Syntax,
+                    das Vokabular und der Zeichensatz.</p>
+                <ol class="text">
+                    <li>Die Syntax einer Programmiersprache ist deren „Grammatik“. Sie beschreibt sowohl die zulässigen Sprachelemente als auch,
+                        wie diese Sprachelemente zu verwenden sind.</li>
+                    <li>Mit dem Vokabular sind reservierte Schlüsselwörter gemeint, die folglich nicht als Namen für Variablen oder
+                        Funktionen gewählt werden dürfen.</li>
+                    <li>Der Zeichensatz einer Programmiersprache besteht in der Regel aus alphabetischen und numerischen Zeichen sowie aus Sonderzeichen.</li>
+                </ol>
+                <hr>
+                <p class="text">Wie leistungsfähig eine Programmiersprache ist, wird durch die Mächtigkeit des Befehlssatzes bestimmt.
+                    Im Allgemeinen besitzen formale Sprachen mindestens die folgenden Befehle:</p>
+                <ul class="text">
+                    <li>Befehle zur Ein- und Ausgabe von Daten, mit denen das Programm Informationen entgegennehmen und ausgeben kann</li>
+                    <li>Befehle zur Deklaration von Variablen und anderen Datentypen wie Feldern, mit welchen Daten (zwischen-)gespeichert werden können</li>
+                    <li>Funktionen zur Verarbeitung von Zeichenketten (z.B. zur Verkettung von Zeichenketten)</li>
+                    <li>mathematische Grundfunktionen (z.B. Addition, Multiplikation)</li>
+                    <li>Steueranweisungen wie beispielsweise die bedingte Ausführung oder die wiederholte Ausführung bestimmter Programmteile.</li>
+                </ul>
+                <p class="text">Aus der Kombination dieser Grundfunktionen lassen sich auch komplexere Funktionen erstellen. Einige formale Sprachen
+                    bieten zudem die Möglichkeit, diese höheren Funktionen als sogenannte Bibliothek zu kapseln und somit wiederverwendbar zu machen.</p>
+                <small>https://www.dev-insider.de/was-ist-eine-programmiersprache-a-577066/</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Programmiersprachen Trends</h4>
+                <table class="table table-striped text">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Rang</th>
+                            <th>Sprache</th>
+                            <th>Anteil</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Python</td>
+                            <td>30.32%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Java</td>
+                            <td>17.79%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>JavaScript</td>
+                            <td>9.03%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>C#</td>
+                            <td>6.55%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>C++</td>
+                            <td>6.02%</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><a href="php.html">PHP</a></td>
+                            <td>5.94%</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>R</td>
+                            <td>3.96%</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>TypeScript</td>
+                            <td>2.77%</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Objective C</td>
+                            <td>2.24%</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Swift</td>
+                            <td>1.78%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <small>https://www.jacob.de/page/programmiersprachen-trends-2020-55938/</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Klassen von Programmiersprachen:<br>Programmierparadigmen</h4>
+                <h5 class="h5">Die imperative Programmierung:<br>Das älteste Programmierparadigma</h5>
+                <p class="text">Bei der imperativen Programmierung besteht ein Computerprogramm aus einer Folge von Anweisungen, die genau vorgibt,
+                    zu welchem Zeitpunkt was vom Rechner getan werden soll. Um die Befehlsausführung zu steuern, werden bestimmte Kontrollstrukturen
+                    wie Schleifen oder Verzweigungen verwendet. Die imperative Programmierung ist das am längsten bekannte Paradigma.
+                    Zu ihm gehören formale Sprachen wie FORTRAN, ALGOL, Pascal, Cobol, C und die von Google-Mitarbeitern entwickelte Sprache Go.</p>
+                <hr>
+                <h5 class="h5">Die funktionale Programmierung:<br>Computerprogramme als Funktionen</h5>
+                <p class="text">Bei der funktionalen Programmierung bestehen die Computerprogramme ausschließlich aus Funktionen die - wie in der Mathematik - zu Funktionen
+                    höherer Ordnung verknüpft werden können. Auch das Programm selbst ist eine Funktion.</p>
+                <p class="text">Seinen Ursprung hat das Programmierparadigma in der akademischen Forschung der 1930er Jahre. Damals arbeiteten verschiedene Wissenschaftler
+                    am sogenannten Lambda-Kalkül. Dabei handelt es sich um eine formale, mathematische Sprache, mit der sich Funktionen untersuchen lassen.
+                    Das Lambda-Kalkül wurde zur theoretischen Grundlage der funktionalen Programmierung. Zu den bekanntesten funktionalen
+                    Sprachen zählen LISP, Haskell und Scheme.</p>
+                <hr>
+                <h5 class="h5">Die objektorientierte Programmierung:<br>Objekte stehen im Mittelpunkt</h5>
+                <p class="text">Objektorientierte Sprachen wie Python, Java, <a href="php.html">PHP</a>, Javascript oder C++ fassen Computerprogramme als System von kooperierenden Objekten auf.
+                    Ein Objekt zeichnet sich dadurch aus, dass es einer übergeordneten Kategorie (Klasse) angehört, bestimmte Eigenschaften (Attribute) besitzt
+                    und ihm verschiedene Methoden zugeordnet sind. Außerdem muss es in der Lage sein, Nachrichten an andere Objekte zu senden
+                    und von diesen zu empfangen.</p>
+                <p class="text">Programmiert man objektorientiert, dann werden – im Gegensatz den sonstigen Programmierparadigmen – Daten und Anweisungen nicht voneinander
+                    getrennt deklariert; vielmehr werden Daten und Befehle zu einer Einheit zusammengefasst, um so die Organisationsstrukturen der realen
+                    Welt besser nachbilden zu können.</p>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4"><img src="icons/blockquote-left.svg" alt="" width="30px">   Quellen</h4>
+                <ul class="list-group text">
+                    <li class="list-group-item">
+                        <strong>Augusten, S. (2017). </strong><i>Was ist eine Programmiersprache?</i>, (URL:
+                        <a class="link-primary" href="https://www.dev-insider.de/was-ist-eine-programmiersprache-a-577066/">https://www.dev-insider.de/was-ist-eine-programmiersprache-a-577066/</a>
+                        [letzter Zugriff: 22.08.2021]).
+                    </li>
+                    <li class="list-group-item">
+                        <strong>o. A (2021). </strong><i>Programmiersprachen Trends 2021 – die Top 15</i>, (URL:
+                        <a class="link-primary" href="https://www.jacob.de/page/programmiersprachen-trends-2020-55938/">https://www.jacob.de/page/programmiersprachen-trends-2020-55938/</a>
+                        [letzter Zugriff: 22.08.2021]).
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4"><img src="icons/info-square.svg" alt="" width="25px">   Informationen</h4>
+                <table class="table table-borderless table-30">
+                    <tbody>
+                    <tr>
+                        <td><img src="icons/person-circle.svg" alt="">  Autor</td>
+                        <td>Nils Kruthoff</td>
+                    </tr>
+                    <tr>
+                        <td><img src="icons/calendar-plus.svg" alt="">  Erstellt</td>
+                        <td>02.05.2021</td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap"><img src="icons/pencil-square.svg" alt=""> Zuletzt Beabeitet</td>
+                        <td class="text-nowrap"><strong id="datetime">14.08.2021 18:00</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="icons/tag.svg" alt="">  Tags</td>
+                        <td><a href="it.html">IT</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button onclick="saveDateTime()" class="btn btn-primary">Speichern</button>
+            </section>
+
+            <footer class="row">
+                <p class="col-sm-4">Grundlagen der Web-Programmierung</p>
+                <p class="col-sm-4">Glossar für die Log7-Consult GmbH</p>
+                <p class="col-sm-4">©Nils Kruthoff</p>
+            </footer>
+        </main>
+
+        <script src="keysearch.js" type="text/javascript"></script>
+        <script src="savedate.js" type="text/javascript"></script>
+        <script src="mark.js" type="text/javascript"></script>
+        <script src="top.js" type="text/javascript"></script>
+    </body>
+</html>

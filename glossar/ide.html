@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>IDE - Integrierte Entwicklungsumgebung</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="topbutton.css">
+        <link rel="stylesheet" type="text/css" href="begriff.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="p-3 bg-dark text-white">
+            <nav class="container">
+                <div class="d-flex">
+
+                    <ul class="nav col-lg-auto">
+                        <li><a href="index.html" class="nav-link px-2 text-primary">Log7-Consulting</a></li>
+                        <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
+                        <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
+                        <li><a href="marketing.html" class="nav-link px-2 text-white">Marketing</a></li>
+                        <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
+                        <li><a href="../index.html" class="nav-link px-2 text-primary">Zurück zum Lebenslauf</a></li>
+                    </ul>
+
+                    <form class="form-inline">
+                        <input list="keywords" id="searchText" class="form-control mr-sm-2" type="text" placeholder="Stichwortsuche...">
+                        <input class="btn btn-primary" type="button" id="SearchBtn" value="Suchen"
+                               onclick="keySearch(document.getElementById('searchText').value, 3)"/>
+                        <datalist id="keywords">
+                            <option value="Merkmale">
+                            <option value="Bestandteile">
+                            <option value="PHPStorm">
+                            <option value="PyCharm">
+                            <option value="GUI-Builder">
+                            <option value="Kommandozeile">
+                            <option value="Debugger">
+                        </datalist>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron">
+            <section class="container">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
+                        <li class="breadcrumb-item"><a href="glossar.html">Glossar</a></li>
+                        <li class="breadcrumb-item active text" aria-current="page">IDE - Integrierte Entwicklungsumgebung</li>
+                    </ol>
+                </nav>
+                <h1 class="display-3 text-nowrap" id="title">IDE - Integrierte Entwicklungsumgebung</h1>
+                <p class="lead mt-4">Eine integrierte Entwicklungsumgebung oder IDE stellt Programmierern eine Sammlung der wichtigsten Werkzeuge zur
+                    Softwareentwicklung unter einer Oberfläche zur Verfügung. Die Arbeit für die Erstellung von Programmen wird dadurch vereinfacht.</p>
+            </section>
+        </div>
+
+        <button onclick="toTop()" id="topButton" title="Zum Seitenanfang">^</button>
+
+        <main class="container">
+            <section class="section-seperator">
+                <h4 class="h4">Die wichtigsten Merkmale einer integrierten Entwicklungsumgebung</h4>
+                <p class="text">Die integrierte Entwicklungsumgebung, abgekürzt IDE (Integrated Development Environment), sammelt unter einer gemeinsamen
+                    Oberfläche die wichtigsten Tools für das Erstellen von Software. Zu diesen Tools zählen beispielsweise der Editor mit
+                    Quelltextformatierung und Syntaxhervorhebung, <a href="compiler.html">Compiler</a> und Linker, Debugger, <a href="compiler.html#interpreter">Interpreter</a>, Werkzeuge für das Erstellen von
+                    grafischen Oberflächen, Versionsverwaltungen und weitere Tools.</p>
+                <p class="text">Da die einzelnen Werkzeuge untereinander Informationen austauschen können, lassen sich viele Arbeitsgänge beim
+                    Programmieren vereinfachen und beschleunigen. Beispielsweise ist es möglich, Fehler bei der Ausführung der Programme direkt im
+                    Quelltext zu markieren und dadurch einfacher zu beheben. Ohne die Nutzung einer integrierten Entwicklungsumgebung müssten
+                    verschiedene Programme getrennt voneinander ausgeführt und manuell synchronisiert werden.</p>
+                <p class="text">Da IDEs dem Programmierer bzw. Software-Entwickler viel Komfort bei der Arbeit bieten und wichtige Arbeitsschritte
+                    zusammenfassen, sind sie in vielen Bereichen zu unentbehrlichen Hilfsmitteln geworden. Sie nehmen dem Entwickler häufig
+                    wiederkehrende Arbeiten ab und entlasten ihn von formalen Tätigkeiten wie die Verwaltung von Arbeitsergebnissen oder Programmversionen.
+                    Dem Softwareentwickler fällt es dank der IDEs wesentlich leichter, sich auf seine eigentliche Arbeit, das Programmieren,
+                    zu konzentrieren.</p>
+                <p class="text">Die ersten IDEs etablierten sich in den 80er Jahren. Sie lösten das bis dahin übliche Arbeiten mit verschiedenen
+                    getrennten Tools und Kommandozeilen-orientierten Oberflächen ab. Eine der ersten weit verbreiteten integrierten Entwicklungsumgebungen
+                    war Turbo Pascal.</p>
+                <p class="text">Über die Jahre hinweg entwickelten sich IDEs von textbasierte Anwendungen hin zu visuellen Programmierumgebungen mit
+                    leistungsfähigen grafischen Benutzeroberflächen. Integrierte Entwicklungsumgebungen stehen unter anderem für
+                    <a href="programmiersprachen.html">Programmiersprachen</a>,
+                    Betriebssysteme und Plattformen wie Visual Basic, .NET, Java, <a href="php.html">PHP</a> iOS, Android oder PowerScript zur Verfügung.</p>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <a href="https://www.statista.com/statistics/869106/worldwide-software-developer-survey-tools-in-use/" rel="nofollow">
+                    <img src="https://www.statista.com/graphic/1/869106/worldwide-software-developer-survey-tools-in-use.jpg"
+                         alt="Statistic: Programming/development tools used by software developers worldwide from 2018 to 2021 | Statista"
+                         style="width: 100%; height: auto !important; max-width:1000px;-ms-interpolation-mode: bicubic;"/>
+                </a><br />
+                <small>https://www.statista.com/statistics/869106/worldwide-software-developer-survey-tools-in-use/</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Die wichtigsten Bestandteile einer integrierten Entwicklungsumgebung</h4>
+                <p class="text">Wie bereits erwähnt, gehören folgende Komponenten zu den wichtigsten Bestandteilen einer integrierten Entwicklungsumgebung:</p>
+                <ul class="text">
+                    <li>Editor mit Quelltextformatierung und Syntaxhervorhebung</li>
+                    <li><a href="compiler.html">Compiler</a></li>
+                    <li><a href="compiler.html#interpreter">Interpreter</a></li>
+                    <li>Linker</li>
+                    <li>Debugger</li>
+                    <li>Werkzeuge zur Erstellung grafischer Benutzeroberflächen (GUI-Builder)</li>
+                    <li>Versionsverwaltungen</li>
+                </ul>
+                <p class="text">Leistungsfähige Editoren sind in der Lage, schon beim Eintippen den Kontext zu erkennen, und bieten Funktionen zur automatischen Vervollständigung des Programmcodes. Programmierer müssen deshalb nicht mehr die komplette Syntax aller Befehle, Felder oder Variablen exakt kennen, sondern können diese direkt beim Tippen passend auswählen. Editoren verbessern überdies die Lesbarkeit und Übersichtlichkeit des Codes, indem sie ihn strukturieren und Befehle oder Variablen eindeutig kennzeichnen.</p>
+                <p class="text">Debugger in IDEs bieten in vielen Fällen grafische Schnittstellen und ermöglichen es, Haltepunkte (Breakpoints) direkt im Editor zu markieren. Gleichzeitig stellen sie die aktuellen Werte von Variablen und Parametern in Tabellenform dar.</p>
+                <small>https://www.dev-insider.de/was-ist-eine-ide-a-600703/</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">IDEs im Überblick</h4>
+                <table class="table table-striped text">
+                    <thead class="table-primary">
+                    <tr>
+                        <th>IDE</th>
+                        <th><a href="programmiersprachen.html">Programmiersprachen</a></th>
+                        <th>Entwickler</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td><a href="https://www.jetbrains.com/de-de/phpstorm/">PHPStorm</a></td>
+                        <td><a href="php.html">PHP</a></td>
+                        <td>JetBrains</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.eclipse.org/ide/">Eclipse</a></td>
+                        <td>Java, C++, C#, Python, JavaScript, <a href="php.html">PHP</a></td>
+                        <td>Eclipse Foundation</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://netbeans.apache.org/">NetBeans</a></td>
+                        <td>Java, C, C++</td>
+                        <td>Apache Software Foundation</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://visualstudio.microsoft.com/de/">Microsoft Visual Studio</a></td>
+                        <td>C#, Visual C++, ASP.NET, JavaScript, Visual F#</td>
+                        <td>Microsoft</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://code.visualstudio.com/docs">Visual Studio Code</a></td>
+                        <td>alle Sprachen</td>
+                        <td>Microsoft</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.jetbrains.com/pycharm/guide/tips/quick-docs/">PyCharm</a></td>
+                        <td>Python</td>
+                        <td>JetBrains</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.codeblocks.org/">Code::Blocks</a></td>
+                        <td>C, C++, D, Fortran</td>
+                        <td>quelloffen</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://developer.apple.com/documentation/xcode/">XCode</a></td>
+                        <td>Swift</td>
+                        <td>Apple</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://developer.android.com/studio/intro">Android Studio</a></td>
+                        <td>Java, Kotlin</td>
+                        <td>JetBrains</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <small>https://www.jacob.de/page/programmiersprachen-trends-2020-55938/</small>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4"><img src="icons/blockquote-left.svg" alt="" width="30px">   Quellen</h4>
+                <ul class="list-group text">
+                    <li class="list-group-item">
+                        <strong>Luber, S. (2017). </strong><i>Was ist eine IDE?</i>, (URL:
+                        <a class="link-primary" href="https://www.dev-insider.de/was-ist-eine-ide-a-600703/">
+                            https://www.dev-insider.de/was-ist-eine-ide-a-600703/</a>
+                        [letzter Zugriff: 23.08.2021]).
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Liu, S. (2021). </strong>
+                        <i>Programming/development tools used by software developers worldwide from 2018 to 2021</i>,
+                        (URL:
+                        <a class="link-primary" href="https://www.statista.com/statistics/869106/worldwide-software-developer-survey-tools-in-use/">
+                            https://www.statista.com/statistics/869106/worldwide-software-developer-survey-tools-in-use/</a>
+                        [letzter Zugriff: 20.08.2021]).
+                    </li>
+                    <li class="list-group-item">
+                        <strong>o. A. (o. J). </strong>
+                        <i>IDEs im Überblick</i>,
+                        (URL:<a class="link-primary" href="https://bmu-verlag.de/ides-im-ueberblick/">https://bmu-verlag.de/ides-im-ueberblick/</a>
+                        [letzter Zugriff: 21.08.2021]).
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4"><img src="icons/info-square.svg" alt="" width="25px">   Informationen</h4>
+                <table class="table table-borderless table-30">
+                    <tbody>
+                    <tr>
+                        <td><img src="icons/person-circle.svg" alt="">  Autor</td>
+                        <td>Nils Kruthoff</td>
+                    </tr>
+                    <tr>
+                        <td><img src="icons/calendar-plus.svg" alt="">  Erstellt</td>
+                        <td>02.05.2021</td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap"><img src="icons/pencil-square.svg" alt=""> Zuletzt Beabeitet</td>
+                        <td class="text-nowrap"><strong id="datetime">14.08.2021 18:00</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="icons/tag.svg" alt="">  Tags</td>
+                        <td><a href="it.html">IT</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button onclick="saveDateTime()" class="btn btn-primary">Speichern</button>
+            </section>
+
+            </main>
+            <footer class="p-3 bg-dark text-white">
+                <div class="container">
+                    <div class="d-flex">
+                        <p class="col-sm-4">Grundlagen der Web-Programmierung</p>
+                        <p class="col-sm-4">Glossar für die Log7-Consult GmbH</p>
+                        <p class="col-sm-4">©Nils Kruthoff</p>
+                    </div>
+                </div>
+            </footer>
+
+        <script src="keysearch.js" type="text/javascript"></script>
+        <script src="savedate.js" type="text/javascript"></script>
+        <script src="mark.js" type="text/javascript"></script>
+        <script src="top.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>PHP - Hypertext Preprocessor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="begriff.css">
+        <link rel="stylesheet" type="text/css" href="topbutton.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="p-3 bg-dark text-white">
+            <nav class="container">
+                <div class="d-flex">
+
+                    <ul class="nav col-lg-auto">
+                        <li><a href="index.html" class="nav-link px-2 text-primary">Log7-Consulting</a></li>
+                        <li><a href="glossar.html" class="nav-link px-2 text-white">Glossar</a></li>
+                        <li><a href="logistik.html" class="nav-link px-2 text-white">Logistik</a></li>
+                        <li><a href="marketing.html" class="nav-link px-2 text-white">Marketing</a></li>
+                        <li><a href="it.html" class="nav-link px-2 text-white">IT</a></li>
+                        <li><a href="../index.html" class="nav-link px-2 text-primary">Zurück zum Lebenslauf</a></li>
+                    </ul>
+
+                    <form class="form-inline">
+                        <input list="keywords" id="searchText" class="form-control mr-sm-2" type="text" placeholder="Stichwortsuche...">
+                        <input class="btn btn-primary" type="button" id="SearchBtn" value="Suchen"
+                               onclick="keySearch(document.getElementById('searchText').value, 2)"/>
+                        <datalist id="keywords">
+                            <option value="Beispiel">
+                            <option value="Skript">
+                            <option value="Beschreibung">
+                            <option value="Versionen">
+                            <option value="Einführungstutorial">
+                            <option value="<?php">
+                            <option value="parsen">
+                        </datalist>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <div class="jumbotron">
+            <section class="container">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
+                        <li class="breadcrumb-item"><a href="glossar.html">Glossar</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">PHP - Hypertext Preprocessor</li>
+                    </ol>
+                </nav>
+                <h1 class="display-2 text-nowrap" id="title">PHP - Hypertext Preprocessor</h1>
+                <p class="lead mt-4"><img src="icons/code-slash.svg"> <u>PHP</u><small> (rekursives Akronym für <code>PHP: Hypertext Preprocessor</code>)</small> ist eine weit verbreitete und für den
+                    allgemeinen Gebrauch bestimmte Open Source-<a href="programmiersprachen.html">Programmiersprache</a>,
+                    welche speziell für die Webprogrammierung geeignet ist und in HTML eingebettet werden kann.</p>
+            </section>
+        </div>
+
+        <button onclick="toTop()" id="topButton" title="Zum Seitenanfang">^</button>
+
+        <main class="container">
+            <section class="section-seperator">
+                <h4 class="h4"><img src="icons/code-slash.svg" width="30px">  Ein Code-Beispiel</h4>
+                <div class="phpcode">
+                    <code><span style="color: #000000">
+                        &lt;!DOCTYPE&nbsp;html&gt;<br>
+                        &lt;html&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Beispiel&lt;/title&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;<br><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">echo&nbsp;</span>
+                                    <span style="color: #DD0000">"Hallo,&nbsp;ich&nbsp;bin&nbsp;ein&nbsp;PHP-Skript!"</span>
+                                <span style="color: #007700">;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <span style="color: #0000BB">?&gt;<br></span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;</span>
+                    </code>
+                </div>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Beschreibung und Definition</h4>
+                <p class="text">Anstatt ein Programm mit vielen Anweisungen zur Ausgabe von HTML zu schreiben,
+                    schreibt man etwas HTML und bettet einige Anweisungen ein, die irgendetwas tun
+                    (wie hier "Hallo, ich bin ein PHP-Skript!" auszugeben).
+                    Der PHP-Code steht zwischen speziellen
+                    <a href="https://www.php.net/manual/de/language.basic-syntax.phpmode.php">
+                        Anfangs- und Abschluss-Verarbeitungsinstruktionen &lt?php und ?&gt
+                    </a>,
+                    mit denen man in den "PHP-Modus" und zurück wechseln kann.</p>
+                <p class="text">PHP unterscheidet sich von clientseitigen Sprachen wie Javascript dadurch, dass der Code auf dem Server ausgeführt
+                    wird und dort HTML-Ausgaben generiert, die an den Client gesendet werden. Der Client erhält also nur das Ergebnis der
+                    Skriptausführung, ohne dass es möglich ist herauszufinden, wie der eigentliche Code aussieht.
+                    Sie können Ihren Webserver auch anweisen, alle Ihre HTML-Dateien mit PHP zu parsen,
+                    denn dann gibt es wirklich nichts, das dem Benutzer sagt, was Sie in petto haben.</p>
+                <p class="text">Das Beste an der Verwendung von PHP ist, dass es für Neueinsteiger extrem einfach ist, aber auch einen riesigen
+                    Funktionsumfang für den professionellen Programmierer bietet. Scheuen Sie sich nicht, die lange Liste der
+                    PHP-Funktionen zu lesen. Sie können einsteigen, und binnen weniger Stunden bereits mit dem Schreiben von einfachen
+                    Skripten beginnen.</p>
+                <p class="text">Auch wenn die Entwicklung von PHP auf serverseitige Programmierung fokussiert ist, können Sie mit
+                    PHP weitaus mehr anstellen. Lesen Sie mehr im Abschnitt <a href="https://www.php.net/manual/de/tutorial.php">Was kann PHP?</a> oder benutzen Sie direkt das
+                    <a href="https://www.php.net/manual/de/intro-whatcando.php">Einführungstutorial</a>,
+                    wenn Sie nur an Webprogrammierung interessiert sind.</p>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4">Verbreitung der PHP Versionen</h4>
+                <table class="table table-striped text">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>PHP Version</th>
+                            <th>Verbreitung</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Version 7</td>
+                            <td>67.4%</td>
+                        </tr>
+                        <tr>
+                            <td>Version 5</td>
+                            <td>31.5%</td>
+                        </tr>
+                        <tr>
+                            <td>Version 8</td>
+                            <td>0.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Version 4</td>
+                            <td>0.2%</td>
+                        </tr>
+                        <tr>
+                            <td>Version 3</td>
+                            <td>weniger als 0.1%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4"><img src="icons/blockquote-left.svg" alt="" width="30px">   Quellen</h4>
+                <ul class="list-group text">
+                    <li class="list-group-item">
+                        <strong>o. A (2021). </strong><i>Was ist PHP?</i>, (URL:
+                        <a class="link-primary" href="https://www.php.net/manual/de/intro-whatis.php">https://www.php.net/manual/de/intro-whatis.php</a>
+                        [letzter Zugriff: 22.08.2021]).
+                    </li>
+                    <li class="list-group-item">
+                        <strong>o. A (2021). </strong><i>Usage statistics of PHP for websites</i>, (URL:
+                        <a class="link-primary" href="https://w3techs.com/technologies/details/pl-php">https://w3techs.com/technologies/details/pl-php</a>
+                        [letzter Zugriff: 22.08.2021]).
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section class="section-seperator">
+                <h4 class="h4"><img src="icons/info-square.svg" alt="" width="25px">   Informationen</h4>
+                <table class="table table-borderless table-30 text">
+                    <tbody>
+                    <tr>
+                        <td><img src="icons/person-circle.svg" alt="">  Autor</td>
+                        <td>Nils Kruthoff</td>
+                    </tr>
+                    <tr>
+                        <td><img src="icons/calendar-plus.svg" alt="">  Erstellt</td>
+                        <td>02.05.2021</td>
+                    </tr>
+                    <tr>
+                        <td class="text-nowrap"><img src="icons/pencil-square.svg" alt=""> Zuletzt Beabeitet</td>
+                        <td class="text-nowrap"><strong id="datetime">14.08.2021 18:00</strong></td>
+                    </tr>
+                    <tr>
+                        <td><img src="icons/tag.svg" alt="">  Tags</td>
+                        <td><a href="logistik.html">Logistik</a>, <a href="it.html">IT</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button onclick="saveDateTime()" class="btn btn-primary">Speichern</button>
+            </section>
+
+            </main>
+            <footer class="p-3 bg-dark text-white">
+                <div class="container">
+                    <div class="d-flex">
+                        <p class="col-sm-4">Grundlagen der Web-Programmierung</p>
+                        <p class="col-sm-4">Glossar für die Log7-Consult GmbH</p>
+                        <p class="col-sm-4">©Nils Kruthoff</p>
+                    </div>
+                </div>
+            </footer>
+
+        <script src="keysearch.js" type="text/javascript"></script>
+        <script src="savedate.js" type="text/javascript"></script>
+        <script src="mark.js" type="text/javascript"></script>
+        <script src="top.js" type="text/javascript"></script>
+    </body>
+</html>
